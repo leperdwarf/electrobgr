@@ -3,118 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ElectroBGR</title>
+    <title>Electrobgr - Comercialización de Electrodomésticos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            background-color: #f4f4f4;
         }
-        header, footer {
-            background-color: #f8f8f8;
-            padding: 20px;
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 0;
             text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
         }
         .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .section {
+            background: white;
             padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #0044cc;
         }
         .product {
-            display: inline-block;
-            width: 45%;
-            margin: 2.5%;
-            text-align: center;
-            border: 1px solid #ccc;
-            padding: 10px;
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-        }
-        .footer-content {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
+            margin: 10px 0;
         }
-        .footer-content nav a {
-            margin: 0 10px;
+        .product img {
+            max-width: 150px;
+            border-radius: 8px;
+        }
+        .product-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+        footer {
+            background-color: #0044cc;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <header role="banner">
-        <h1>ElectroBGR</h1>
-        <nav role="navigation" aria-label="Menú principal">
-            <a href="#productos">Productos</a>
-            <a href="#nosotros">Sobre Nosotros</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#blog">Blog</a>
-        </nav>
+    <header>
+        <h1>Electrobgr</h1>
+        <p>Comercialización de Electrodomésticos de Calidad</p>
     </header>
-
-    <main class="container" id="productos">
-        <h2>Productos Destacados</h2>
-        <section class="product" role="region" aria-labelledby="lavadora-title">
-            <h3 id="lavadora-title">Lavadora</h3>
-            <img src="lavadora.jpg" alt="Lavadora de última tecnología para el cuidado de tu ropa">
-            <p>Tecnología avanzada para el cuidado de tu ropa.</p>
-        </section>
-        <section class="product" role="region" aria-labelledby="refrigerador-title">
-            <h3 id="refrigerador-title">Refrigerador</h3>
-            <img src="refrigerador.jpg" alt="Refrigerador para conservar tus alimentos frescos por más tiempo">
-            <p>Conserva tus alimentos frescos por más tiempo.</p>
-        </section>
-        <section class="product" role="region" aria-labelledby="microondas-title">
-            <h3 id="microondas-title">Microondas</h3>
-            <img src="microondas.jpg" alt="Microondas rápido y eficiente, ideal para cualquier cocina">
-            <p>Rápido y eficiente, ideal para cualquier cocina.</p>
-        </section>
-        <section class="product" role="region" aria-labelledby="aspiradora-title">
-            <h3 id="aspiradora-title">Aspiradora</h3>
-            <img src="aspiradora.jpg" alt="Aspiradora para mantener tu hogar limpio sin esfuerzo">
-            <p>Mantén tu hogar limpio sin esfuerzo.</p>
-        </section>
-    </main>
-
-    <section class="container" id="nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>En ElectroBGR, nos dedicamos a ofrecerte los mejores productos del mercado. Nuestra misión es brindarte soluciones prácticas y eficientes para mejorar tu calidad de vida. Contamos con un equipo de expertos que te asesorarán en todo momento para que tomes la mejor decisión de compra.</p>
-    </section>
-
-    <section class="container" id="contacto">
-        <h2>Contacto</h2>
-        <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
-        <p>Teléfono: <a href="tel:123-456-789">123-456-789</a></p>
-        <p>Correo: <a href="mailto:contacto@electrobgr.com">contacto@electrobgr.com</a></p>
-        <p>Dirección: Calle de la Innovación, 123, Madrid, España</p>
-    </section>
-
-    <section class="container" id="testimonios">
-        <h2>Testimonios</h2>
-        <p>"Excelente servicio y productos de calidad. Muy recomendable." - María G.</p>
-        <p>"Encontré justo lo que necesitaba para mi cocina. ¡Gracias!" - José L.</p>
-        <p>"El envío fue rápido y todo llegó en perfectas condiciones." - Ana R.</p>
-    </section>
-
-    <section class="container" id="blog">
-        <h2>Blog</h2>
-        <p>Visita nuestro blog para obtener consejos útiles y las últimas novedades en electrodomésticos.</p>
-    </section>
-
-    <footer role="contentinfo">
-        <div class="footer-content">
-            <p>&copy; 2024 ElectroBGR. Todos los derechos reservados.</p>
-            <nav role="navigation" aria-label="Menú de pie de página">
-                <a href="#terminos">Términos y Condiciones</a>
-                <a href="#privacidad">Política de Privacidad</a>
-                <a href="#mapa">Mapa del Sitio</a>
-            </nav>
+    <div class="container">
+        <div class="section">
+            <h2>Presentación de la Empresa</h2>
+            <p>Electrobgr se dedica a comercializar productos electrodomésticos como neveras, televisores, lavadoras y otros productos necesarios para el hogar. Nuestro objetivo es ofrecer productos de calidad y un excelente servicio al cliente. Estamos comprometidos con la honestidad, el respeto y la satisfacción de nuestros clientes.</p>
+            <p><strong>Misión:</strong> Proveer electrodomésticos de alta calidad, mejorando la vida diaria de nuestros clientes.</p>
+            <p><strong>Visión:</strong> Ser la empresa líder en comercialización de electrodomésticos a nivel nacional para el 2028, conocida por nuestra honestidad y calidad de servicio.</p>
         </div>
+        <div class="section">
+            <h2>Productos en Venta</h2>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Nevera">
+                <div class="product-details">
+                    <h3>Nevera</h3>
+                    <p>Precio: 500€</p>
+                    <p>Una nevera moderna y eficiente que mantendrá tus alimentos frescos por más tiempo.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Televisor">
+                <div class="product-details">
+                    <h3>Televisor</h3>
+                    <p>Precio: 300€</p>
+                    <p>Televisor de alta definición con una calidad de imagen excepcional y sonido envolvente.</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/150" alt="Lavadora">
+                <div class="product-details">
+                    <h3>Lavadora</h3>
+                    <p>Precio: 400€</p>
+                    <p>Lavadora eficiente con múltiples programas de lavado para cuidar tus prendas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Electrobgr - Todos los derechos reservados</p>
     </footer>
 </body>
 </html>
+    
